@@ -1,80 +1,92 @@
-<div class="navbar bg-base-100 sticky top-0 z-50 shadow-md">
-    <div class="flex-1">
-        <a class="text-xl font-black uppercase tracking-tight">
-            Barbería <span class="text-primary">San Juanico</span>
-        </a>
-    </div>
+<!-- NAVBAR -->
+<div class="navbar bg-base-100 sticky top-0 z-50 shadow">
+    <div class="max-w-6xl mx-auto w-full flex items-center">
+        <div class="flex-1">
+            <a class="text-xl font-black uppercase tracking-tight">
+                Barbería <span class="text-primary">San Juanico</span>
+            </a>
+        </div>
 
-    <div class="flex-none hidden lg:flex items-center gap-6">
-        <a href="#services" class="link link-hover">Servicios</a>
-        <a href="#galeria" class="link link-hover">Galería</a>
-        <a href="https://wa.me/524614210058" target="_blank" class="btn btn-primary btn-sm font-bold">
-            Reservar cita
-        </a>
+        <div class="hidden lg:flex gap-6">
+            <a href="#servicios" class="link link-hover">Servicios</a>
+            <a href="#galeria" class="link link-hover">Galería</a>
+            <a href="#contacto" class="link link-hover">Contacto</a>
+        </div>
+
+        <div class="ml-4">
+            <a href="https://wa.me/524614210058" target="_blank" class="btn btn-primary btn-sm font-bold">
+                WhatsApp
+            </a>
+        </div>
     </div>
 </div>
-<section id="hero" class="relative min-h-[85vh] flex items-center bg-cover bg-center"
-    style="background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2070')">
-    <div class="absolute inset-0 bg-black/70"></div>
 
-    <div class="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center text-white">
-        <div>
-            <span class="badge badge-primary mb-4">Barbería Profesional</span>
-            <h1 class="text-5xl md:text-6xl font-black uppercase leading-tight">
-                Cortes que <br />
-                <span class="text-primary">sí se notan</span>
+<!-- HERO -->
+<section class="hero min-h-[85vh]"
+    style="background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2070');">
+    <div class="hero-overlay bg-black/75"></div>
+
+    <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-xl">
+            <h1 class="mb-6 text-5xl md:text-6xl font-black uppercase">
+                Barbería <span class="text-primary">tradicional</span>
             </h1>
-            <p class="mt-6 text-lg opacity-90">
-                Agenda en línea. Llega, siéntate y sal con flow.
+            <p class="mb-8 text-lg opacity-90">
+                Buen corte, buen trato y atención directa.
+                Aquí se viene a salir bien, no a improvisar.
             </p>
-
-            <a href="https://wa.me/524614210058" target="_blank" class="btn btn-primary btn-lg mt-8">
-                Agendar ahora
+            <a href="https://wa.me/524614210058" target="_blank" class="btn btn-primary btn-lg">
+                Escríbenos
             </a>
         </div>
     </div>
 </section>
-<section id="services" class="py-24 bg-base-100 px-4">
+
+<!-- SERVICIOS -->
+<section id="servicios" class="py-24 bg-base-100 px-4">
     <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl font-black uppercase text-center mb-16">
+        <h2 class="text-4xl font-black uppercase text-center mb-4">
             Servicios
         </h2>
+        <p class="text-center opacity-70 mb-16">
+            Precios claros, trabajo bien hecho
+        </p>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
-            <div class="card bg-base-200 hover:shadow-2xl transition">
+            <div class="card bg-base-200 hover:shadow-xl transition">
                 <div class="card-body text-center">
                     <h3 class="font-bold uppercase">Desvanecido</h3>
-                    <p class="text-sm opacity-70">45 min · Incluye peinado</p>
+                    <p class="text-sm opacity-70">Incluye peinado</p>
                     <span class="text-3xl font-black mt-4">$130</span>
                 </div>
             </div>
 
-            <div class="card bg-base-200 hover:shadow-2xl transition">
+            <div class="card bg-base-200 hover:shadow-xl transition">
                 <div class="card-body text-center">
-                    <h3 class="font-bold uppercase">Corte y peinado</h3>
-                    <p class="text-sm opacity-70">60 min · Lavado incluido</p>
+                    <h3 class="font-bold uppercase">Corte clásico</h3>
+                    <p class="text-sm opacity-70">Cualquier estilo</p>
                     <span class="text-3xl font-black mt-4">$160</span>
                 </div>
             </div>
 
-            <div class="card bg-base-200 hover:shadow-2xl transition">
+            <div class="card bg-base-200 hover:shadow-xl transition">
                 <div class="card-body text-center">
                     <h3 class="font-bold uppercase">Barba</h3>
-                    <p class="text-sm opacity-70">Navaja + toalla caliente</p>
+                    <p class="text-sm opacity-70">Toalla caliente</p>
                     <span class="text-3xl font-black mt-4">$350</span>
                 </div>
             </div>
 
             <div class="card bg-primary text-primary-content scale-105">
                 <div class="card-body text-center">
-                    <span class="badge badge-secondary">Más pedido</span>
+                    <span class="badge badge-secondary">Recomendado</span>
                     <h3 class="font-bold uppercase">Premium</h3>
-                    <p class="text-sm">Corte + barba + facial</p>
+                    <p class="text-sm">Corte + barba</p>
                     <span class="text-3xl font-black mt-4">$500</span>
                 </div>
             </div>
 
-            <div class="card bg-base-200 hover:shadow-2xl transition">
+            <div class="card bg-base-200 hover:shadow-xl transition">
                 <div class="card-body text-center">
                     <h3 class="font-bold uppercase">Escolar</h3>
                     <p class="text-sm opacity-70">Niños</p>
@@ -84,11 +96,31 @@
         </div>
     </div>
 </section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="py-24 bg-base-200 px-4">
+    <div class="max-w-4xl mx-auto text-center space-y-6">
+        <h2 class="text-3xl font-black uppercase">
+            Contáctanos
+        </h2>
+        <p class="opacity-70">
+            ¿Tienes duda o quieres pasar hoy?
+            Escríbenos y te respondemos directo.
+        </p>
+        <a href="https://wa.me/524614210058" target="_blank" class="btn btn-primary btn-lg">
+            WhatsApp
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="bg-neutral text-neutral-content py-12">
-    <div class="max-w-6xl mx-auto px-6 text-center space-y-4">
-        <p class="font-bold uppercase tracking-wide">Barbería San Juanico</p>
+    <div class="max-w-6xl mx-auto px-6 text-center space-y-3">
+        <p class="font-bold uppercase tracking-wide">
+            Barbería San Juanico
+        </p>
         <p class="text-sm opacity-70">
-            Celaya, Gto · Atención con cita
+            Celaya, Gto · Atención personalizada
         </p>
         <p class="text-xs opacity-50">
             © 2026 Todos los derechos reservados
