@@ -1,123 +1,97 @@
-<div class="drawer">
-    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-content flex flex-col">
-        <!-- Navbar -->
-        <div class="navbar bg-base-100 w-full sticky top-0 z-50 shadow-sm">
-            <div class="flex-none lg:hidden">
-                <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        class="inline-block w-6 h-6 stroke-current">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </label>
+<div class="navbar bg-base-100 sticky top-0 z-50 shadow-md">
+    <div class="flex-1">
+        <a class="text-xl font-black uppercase tracking-tight">
+            Barbería <span class="text-primary">San Juanico</span>
+        </a>
+    </div>
+
+    <div class="flex-none hidden lg:flex items-center gap-6">
+        <a href="#services" class="link link-hover">Servicios</a>
+        <a href="#galeria" class="link link-hover">Galería</a>
+        <a href="https://wa.me/524614210058" target="_blank" class="btn btn-primary btn-sm font-bold">
+            Reservar cita
+        </a>
+    </div>
+</div>
+<section id="hero" class="relative min-h-[85vh] flex items-center bg-cover bg-center"
+    style="background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2070')">
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <div class="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center text-white">
+        <div>
+            <span class="badge badge-primary mb-4">Barbería Profesional</span>
+            <h1 class="text-5xl md:text-6xl font-black uppercase leading-tight">
+                Cortes que <br />
+                <span class="text-primary">sí se notan</span>
+            </h1>
+            <p class="mt-6 text-lg opacity-90">
+                Agenda en línea. Llega, siéntate y sal con flow.
+            </p>
+
+            <a href="https://wa.me/524614210058" target="_blank" class="btn btn-primary btn-lg mt-8">
+                Agendar ahora
+            </a>
+        </div>
+    </div>
+</section>
+<section id="services" class="py-24 bg-base-100 px-4">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-black uppercase text-center mb-16">
+            Servicios
+        </h2>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div class="card bg-base-200 hover:shadow-2xl transition">
+                <div class="card-body text-center">
+                    <h3 class="font-bold uppercase">Desvanecido</h3>
+                    <p class="text-sm opacity-70">45 min · Incluye peinado</p>
+                    <span class="text-3xl font-black mt-4">$130</span>
+                </div>
             </div>
-            <div class="flex-1 px-2 mx-2 font-bold text-xl tracking-tighter uppercase">Barbería San Juanico</div>
-            <div class="flex-none hidden lg:block">
-                <ul class="menu menu-horizontal px-1 font-medium">
-                    <li><a href="#hero">Inicio</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a class="btn btn-primary btn-sm ml-4">Reservar Ahora</a></li>
-                </ul>
+
+            <div class="card bg-base-200 hover:shadow-2xl transition">
+                <div class="card-body text-center">
+                    <h3 class="font-bold uppercase">Corte y peinado</h3>
+                    <p class="text-sm opacity-70">60 min · Lavado incluido</p>
+                    <span class="text-3xl font-black mt-4">$160</span>
+                </div>
+            </div>
+
+            <div class="card bg-base-200 hover:shadow-2xl transition">
+                <div class="card-body text-center">
+                    <h3 class="font-bold uppercase">Barba</h3>
+                    <p class="text-sm opacity-70">Navaja + toalla caliente</p>
+                    <span class="text-3xl font-black mt-4">$350</span>
+                </div>
+            </div>
+
+            <div class="card bg-primary text-primary-content scale-105">
+                <div class="card-body text-center">
+                    <span class="badge badge-secondary">Más pedido</span>
+                    <h3 class="font-bold uppercase">Premium</h3>
+                    <p class="text-sm">Corte + barba + facial</p>
+                    <span class="text-3xl font-black mt-4">$500</span>
+                </div>
+            </div>
+
+            <div class="card bg-base-200 hover:shadow-2xl transition">
+                <div class="card-body text-center">
+                    <h3 class="font-bold uppercase">Escolar</h3>
+                    <p class="text-sm opacity-70">Niños</p>
+                    <span class="text-3xl font-black mt-4">$100</span>
+                </div>
             </div>
         </div>
-
-        <!-- Hero Section -->
-        <div id="hero" class="hero min-h-[80vh]"
-            style="background-image: url(https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2070&auto=format&fit=crop);">
-            <div class="hero-overlay bg-black/70"></div>
-            <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-md">
-                    <span class="text-primary font-bold tracking-widest uppercase mb-2 block">Barbering</span>
-                    <h1 class="mb-5 text-6xl font-black uppercase italic">San Juanico</h1>
-                    <p class="mb-8 text-lg opacity-90">
-                        Agenda tu cita en línea y disfruta de un corte de calidad.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="https://wa.me/+524614210058?text=Hola!%20Me%20gustaría%20agendar%20una%20cita"
-                            target="_blank" class="btn btn-primary btn-lg group">
-                            Agendar Cita
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Services Section -->
-        <section class="py-24 bg-base-100 px-4">
-            <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-16">
-                    <h2 id="services" class="text-4xl font-black uppercase tracking-tighter mb-4">Nuestros Servicios
-                    </h2>
-                    <div class="w-24 h-1 bg-primary mx-auto"></div>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-                    <!-- service card 0 -->
-                    <div
-                        class="card bg-base-200 shadow-xl hover:bg-primary hover:text-primary-content transition-colors duration-300 group">
-                        <div class="card-body items-center text-center">
-                            <h3 class="card-title text-2xl font-bold uppercase">Corte Desvanecido</h3>
-                            <p class="opacity-70 group-hover:opacity-100">Corte y peinado con productos.
-                            </p>
-                            <div class="text-3xl font-black mt-4">$130</div>
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- Service Card 1 -->
-                    <div
-                        class="card bg-base-200 shadow-xl hover:bg-primary hover:text-primary-content transition-colors duration-300 group">
-                        <div class="card-body items-center text-center">
-                            <h3 class="card-title text-2xl font-bold uppercase">Corte y peinado</h3>
-                            <p class="opacity-70 group-hover:opacity-100">Lavado, corte y peinado con productos.
-                            </p>
-                            <div class="text-3xl font-black mt-4">$160</div>
-                        </div>
-                    </div>
-                    <!-- Service Card 2 -->
-                    <div
-                        class="card bg-base-200 shadow-xl hover:bg-primary hover:text-primary-content transition-colors duration-300 group">
-                        <div class="card-body items-center text-center">
-                            <h3 class="card-title text-2xl font-bold uppercase">Barba</h3>
-                            <p class="opacity-70 group-hover:opacity-100">Perfilado con navaja y toalla caliente.</p>
-                            <div class="text-3xl font-black mt-4">$350</div>
-                        </div>
-                    </div>
-                    <!-- Service Card 3 -->
-                    <div class="card bg-primary text-primary-content shadow-xl scale-105 z-10">
-                        <div class="card-body items-center text-center">
-                            <div class="badge badge-secondary mb-2">Popular</div>
-                            <h3 class="card-title text-2xl font-bold uppercase">Premium</h3>
-                            <p>Corte + Barba + Exfoliación facial completa.</p>
-                            <div class="text-3xl font-black mt-4">$500</div>
-                        </div>
-                    </div>
-                    <!-- Service Card 4 -->
-                    <div
-                        class="card bg-base-200 shadow-xl hover:bg-primary hover:text-primary-content transition-colors duration-300 group">
-                        <div class="card-body items-center text-center">
-                            <h3 class="card-title text-2xl font-bold uppercase">Escolar</h3>
-                            <p class="opacity-70 group-hover:opacity-100">Corte escolar para niños.</p>
-                            <div class="text-3xl font-black mt-4">$100</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer footer-center p-10 bg-neutral text-neutral-content">
-            <aside>
-                <p class="text-sm opacity-50">Copyright © 2026 - Todos los derechos reservados</p>
-            </aside>
-        </footer>
+    </div>
+</section>
+<footer class="bg-neutral text-neutral-content py-12">
+    <div class="max-w-6xl mx-auto px-6 text-center space-y-4">
+        <p class="font-bold uppercase tracking-wide">Barbería San Juanico</p>
+        <p class="text-sm opacity-70">
+            Celaya, Gto · Atención con cita
+        </p>
+        <p class="text-xs opacity-50">
+            © 2026 Todos los derechos reservados
+        </p>
+    </div>
+</footer>
