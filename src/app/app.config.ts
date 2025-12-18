@@ -6,8 +6,9 @@ import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes, withHashLocation()),
-    importProvidersFrom(HttpClientModule),
+    // Si quitas withHashLocation, recuerda agregar el vercel.json
+    provideRouter(routes), 
+    // Elimina HttpClientModule si ya usas provideHttpClient()
     provideHttpClient()
   ]
 };
